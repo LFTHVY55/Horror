@@ -1,52 +1,44 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import villainsData from './data/villainsData'; // Import the villainsData array
+import Home from './components/Home';
+import VillainDetail from './components/VillainDetail';
 
 function App() {
   // State variable to store the ID of the selected villain
   const [featVillainId, setFeatVillainId] = useState(null);
-
-  // State variable to store the villains data
-  const [villains, setVillains] = useState(villainsData);
-
-  console.log(villains); // Log the villains array from the useState hook
 
   // Function to handle clicking on a villain
   const handleClick = (id) => {
     setFeatVillainId(id); // Set the selected villain ID in the state
   };
 
-  // Find the selected villain based on the featVillainId
-  const featuredVillain = villains.find(villain => villain.id === featVillainId);
-
-  console.log(featuredVillain); // Log the featured villain to the console
-
   return (
-    <div className="App">
-      {/* Map over the villains array and return JSX for each villain */}
-      {villains.map(villain => (
-        <div key={villain.id} onClick={() => handleClick(villain.id)}>
-          <h2>{villain.name}</h2>
-          <p>Movie Franchise: {villain.movieFranchise}</p>
-          <p>Description: {villain.description}</p>
-          <img src={villain.imageUrl} alt={villain.name} />
-          <a href={villain.imdbLink} target="_blank" rel="noopener noreferrer">IMDb Link</a>
-          {/* Render a p tag with the villain name */}
-          <p>{villain.name}</p>
-        </div>
-      ))}
-      {/* Render the selected villain details */}
-      {featuredVillain && (
-        <div>
-          <h2>Selected Villain</h2>
-          <p>Name: {featuredVillain.name}</p>
-          <p>Movie Franchise: {featuredVillain.movieFranchise}</p>
-          <p>Description: {featuredVillain.description}</p>
-          <img src={featuredVillain.imageUrl} alt={featuredVillain.name} />
-          <a href={featuredVillain.imdbLink} target="_blank" rel="noopener noreferrer">IMDb Link</a>
-        </div>
-      )}
-    </div>
+    <Router>
+      <div className="App">
+        <header>
+          <h1>Villains Database</h1>
+          {/* Add your navigation bar here */}
+        </header>
+
+        <main>
+          <Routes>
+            {/* Route for the home page */}
+            <Route
+              path="/"
+              element={<Home villains={villainsData} handleClick={handleClick} />}
+            />
+            {/* Route for the villain detail page */}
+            <Route path="/villain/:id" element={<VillainDetail />} />
+          </Routes>
+        </main>
+
+        <footer>
+          <p>&copy; 2024 Villains Database. All rights reserved.</p>
+        </footer>
+      </div>
+    </Router>
   );
 }
 
