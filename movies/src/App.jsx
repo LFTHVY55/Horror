@@ -10,9 +10,11 @@ function Navbar() {
   return (
     <nav>
       <Link to="/">Home</Link>
+      <p>Click on the photos for more information about the villains</p>
     </nav>
   );
 }
+
 
 function App() {
   // State variable to store the ID of the selected villain
@@ -37,7 +39,7 @@ function App() {
     <Router>
       <div className="App">
         <header>
-          <h1>Villains Database</h1>
+          <h1>Historical Villains</h1>
           {/* Add your navigation bar here */}
           <Navbar />
         </header>
@@ -47,9 +49,7 @@ function App() {
           <Route path="/villain/:id" element={<VillainDetail />} /> {/* Use element prop instead of component */}
         </Routes>
 
-        <footer>
-          <p>&copy; 2024 Villains Database. All rights reserved.</p>
-        </footer>
+    
       </div>
     </Router>
   );

@@ -77,6 +77,52 @@ function VillainDetail() {
               </div>
             );
             break;
+            case 'Freddy Krueger':
+  additionalDetails = (
+    <div>
+      <p>Freddy Krueger is a fictional character known as the main antagonist of the "A Nightmare on Elm Street" film series.</p>
+      <p>Here's some information about Freddy Krueger:</p>
+      <p>Origin: Freddy Krueger first appeared in the film "A Nightmare on Elm Street" (1984), directed by Wes Craven. He is portrayed as a vengeful spirit who haunts the dreams of teenagers in the fictional town of Springwood, Ohio.</p>
+      <p>Appearance: Freddy Krueger is often depicted as a disfigured and burned man wearing a red and green striped sweater, fedora hat, and a glove with razor-sharp knives attached to the fingers of his right hand.</p>
+      <p>Modus Operandi: Freddy Krueger's modus operandi involves entering the dreams of his victims, where he has the power to manipulate reality and inflict harm on them. He uses his glove of knives to kill his victims in their dreams, which also results in their death in the real world.</p>
+      <p>Backstory: Freddy Krueger was once a child murderer who evaded justice due to a legal technicality. He was later burned alive by the vengeful parents of his victims, leading to his transformation into a dream demon seeking revenge on the children of Springwood.</p>
+      <p>Personality: Freddy Krueger is depicted as sadistic, taunting, and often humorous in his interactions with his victims. He relishes in their fear and suffering, deriving pleasure from their nightmares.</p>
+      <p>Legacy: Freddy Krueger has become an iconic figure in horror cinema, inspiring numerous sequels, spin-offs, and adaptations. He is known for his dark humor, memorable one-liners, and terrifying presence in the nightmares of audiences worldwide.</p>
+      <p>Impact: The character of Freddy Krueger has left a lasting impact on popular culture, influencing other horror films, television series, video games, and literature. His distinctive appearance and chilling backstory have made him one of the most recognizable and enduring villains in the horror genre.</p>
+    </div>
+  );
+  break;
+  case 'Pennywise':
+    additionalDetails = (
+      <div>
+        <p>Pennywise is a fictional character known as the main antagonist of Stephen King's novel "It" and its adaptations.</p>
+        <p>Here's some information about Pennywise:</p>
+        <p>Origin: Pennywise first appeared in Stephen King's novel "It" (1986), which tells the story of a shape-shifting entity that terrorizes the town of Derry, Maine, by preying on the fears of children.</p>
+        <p>Appearance: Pennywise is often depicted as a malevolent clown with white face paint, red hair, and a ruffled costume. His appearance is intended to lure children into his trap before revealing his true monstrous form.</p>
+        <p>Modus Operandi: Pennywise's modus operandi involves feeding on the fear of his victims, which he accomplishes by taking on various forms and manipulating their perceptions. He often appears as their worst fears, using psychological manipulation to terrorize them.</p>
+        <p>Backstory: Pennywise is an ancient cosmic entity known as the "Eater of Worlds" or "It," who has existed for millions of years. He awakens every 27 years to prey on the children of Derry, feeding on their fear and suffering.</p>
+        <p>Personality: Pennywise is sadistic, cruel, and manipulative, deriving pleasure from the suffering of his victims. He delights in instilling terror and despair in those he encounters, using their fear as a source of nourishment.</p>
+        <p>Legacy: Pennywise has become an iconic figure in horror literature and film, with his portrayal in the 1990 miniseries adaptation and the 2017 and 2019 film adaptations receiving widespread acclaim. He is known for his eerie presence, terrifying abilities, and memorable catchphrases.</p>
+        <p>Impact: The character of Pennywise has had a profound impact on popular culture, inspiring countless adaptations, references, and homages in other works of fiction. His chilling portrayal continues to terrify audiences and solidify his status as one of the most iconic villains in horror history.</p>
+      </div>
+    );
+    break;
+    case 'Jigsaw':
+      additionalDetails = (
+        <div>
+          <p>Jigsaw is a fictional character known as the main antagonist of the "Saw" film series.</p>
+          <p>Here's some information about Jigsaw:</p>
+          <p>Origin: Jigsaw, also known as John Kramer, first appeared in the film "Saw" (2004), directed by James Wan. He is portrayed as a highly intelligent and morally ambiguous individual who designs elaborate traps to test his victims' will to live.</p>
+          <p>Appearance: Jigsaw is often depicted wearing a black robe and a pig mask to conceal his identity. His appearance is intended to strike fear into the hearts of his victims and symbolize his role as the puppet master behind the deadly games he orchestrates.</p>
+          <p>Modus Operandi: Jigsaw's modus operandi involves placing his victims in life-threatening situations and forcing them to make impossible choices to survive. He believes that his traps provide individuals with an opportunity for redemption and appreciation for life.</p>
+          <p>Philosophy: Jigsaw's actions are motivated by his desire to instill a sense of gratitude for life in his victims by subjecting them to extreme trials and forcing them to confront their own mortality. He sees himself as a teacher rather than a murderer.</p>
+          <p>Backstory: John Kramer, the man behind the Jigsaw persona, was a civil engineer who became disillusioned with society after experiencing personal tragedy. He adopts the Jigsaw identity as a means of carrying out his twisted sense of justice.</p>
+          <p>Legacy: Jigsaw has become an iconic figure in horror cinema, known for his intricate traps, philosophical musings, and morally ambiguous motivations. The "Saw" franchise has spawned numerous sequels and spin-offs, solidifying its place in horror history.</p>
+          <p>Impact: The character of Jigsaw has had a significant impact on popular culture, influencing other horror films, television shows, and media. His complex character and the themes explored in the "Saw" series continue to fascinate and terrify audiences around the world.</p>
+        </div>
+      );
+      break;
+    
     default:
       additionalDetails = null;
   }
