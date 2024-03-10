@@ -1,4 +1,3 @@
-// Home.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -17,6 +16,8 @@ function Home({ villains, handleClick }) {
           </Link>
           {/* Render a p tag with the villain name */}
           <p>{villain.name}</p>
+          {/* Add IMDb link */}
+          <p>IMDb: <a href={villain.imdbLink} target="_blank" rel="noopener noreferrer">Link</a></p>
         </div>
       ))}
     </div>
